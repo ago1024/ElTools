@@ -7,18 +7,18 @@ with resource name and map location
 Usage
 -----
 
-Unix
-++++
+.Unix
+----
 $ xsltproc mapanalyze.xsl mapname.xml -o mapname.txt
-++++
+----
 
-Windows
-++++
+.Windows
+----
 > powershell ./xslt.ps1 mapanalyze.xsl mapname.xml -o mapname.txt
-++++
+----
 
-Output (mine1_sub.xml)
-++++
+.Output (mine1_sub.xml)
+----
 340,34,Gold
 336,32,Gold
 336,31,Gold
@@ -27,4 +27,4 @@ Output (mine1_sub.xml)
 248,136,Blue Quartz
 247,134,Blue Quartz
 247,138,Blue Quartz
-++++
+----
