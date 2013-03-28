@@ -10,7 +10,7 @@ Usage
 mapconverter source.[elm|xml] target.[elm|xml] [options]
 ----
 
-Options are:
+.Options
 --set-cluster x1,y1,x2,y2,i:: 
 -c x1,y1,x2,y2,i:: 
 	Add area to cluster i
