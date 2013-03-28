@@ -11,9 +11,9 @@ The
 
 The script uses powershell to create the SVG files, the resource index and the mapname list.
 
-++++
+----
 powershell ./elresources.ps1
-++++
+----
 
 === Required input
 3dobjects.lst:: From EL distribution
