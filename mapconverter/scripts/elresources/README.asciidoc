@@ -1,0 +1,37 @@
+EL Resources Website
+====================
+
+Creates a set of SVG files from XML files created with mapconverter
+with each resource marked. Resources are grouped into layers.
+
+The 
+
+
+== Usage
+
+The script uses powershell to create the SVG files, the resource index and the mapname list.
+
+++++
+powershell ./elresources.ps1
+++++
+
+=== Required input
+3dobjects.lst:: From EL distribution
+harvestable.lst:: From EL distribution
+maplist.lst:: From EL distribution
+template.svg:: Template for created SVG
+*.xml:: Map data created with mapconverter
+maps/*.png:: Detailed 3rd party maps
+
+=== Output
+*.svg:: Map with 3rd party map as background and resources as layers
+maplist.js:: Map of file names to map names (from maplist.lst)
+maps.html:: Map index
+
+=== Required for website
++ index.html
++ elresources.css
++ maplist.js
++ maps.html
++ *.svg
++ maps/*.png

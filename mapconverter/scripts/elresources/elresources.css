@@ -1,0 +1,4 @@
+#topbar { left: 10px; top: 10px; width: 100%; position: absolute;  }
+#svgdoc { left: 220px; top: 50px; width: 90%; height: 95%; position: absolute; }
+#sidebar { left: 10px; top: 50px; width: 200px; position: absolute;  }
+#map { left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; }

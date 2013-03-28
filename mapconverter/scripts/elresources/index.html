@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"/>
+	<link rel="stylesheet" type="text/css" href="elresources.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="maplist.js"></script>-->
+	<script type="text/javascript" src="elresources.js"></script>
+    </head>
+    <body onLoad="init()">
+	<div id="map">
+	    <object data="anitora.svg" type="image/svg+xml" id="svgdoc" style="display:inline; visibility: hidden" onLoad="initLayers()">
+		<h1>The webbrowser does not support SVG</h1>
+	    </object>
+	</div>
+
+	<div id="topbar">
+	    <form id="mapLayers"></form>
+	    <a href="maps.html">List all resources</a>
+	</div>
+
+	<div id="sidebar">
+	    Harvestables:<br>
+        Mouse over: <span id="harvestDisplay"></span><br>
+	    <form id="harvestLayers">
+	    </form>
+	</div>
+
+    </body>
+</html>	
