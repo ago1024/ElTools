@@ -29,9 +29,10 @@ maplist.js:: Map of file names to map names (from maplist.lst)
 maps.html:: Map index
 
 === Required for website
-+ index.html
-+ elresources.css
-+ maplist.js
-+ maps.html
-+ *.svg
-+ maps/*.png
+* index.html
+* elresources.css
+* elresources.js
+* maplist.js
+* maps.html
+* *.svg
+* maps/*.png
