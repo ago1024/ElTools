@@ -4,9 +4,6 @@ EL Resources Website
 Creates a set of SVG files from XML files created with mapconverter
 with each resource marked. Resources are grouped into layers.
 
-The 
-
-
 == Usage
 
 The script uses powershell to create the SVG files, the resource index and the mapname list.
