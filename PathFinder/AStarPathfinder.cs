@@ -98,15 +98,23 @@ namespace Calindor.PathFinder
 
         class TileNode : TileKey
         {
+            // Real costs from start to this tile
             public int g;
-            public int f;
+            // estimated costs from start to end via this tile
+            public double f;
             public TileNode p = null;
 
-            public TileNode(short x, short y, int g, int f)
+            public TileNode(short x, short y, int g, double f)
                 : base(x, y)
             {
                 this.g = g;
                 this.f = f;
+            }
+
+            override
+            public String ToString()
+            {
+                return String.Format("{0},{1} ({2} = {3} + {4})", x, y, f, g, f - g);
             }
         }
 
@@ -268,9 +276,9 @@ namespace Calindor.PathFinder
                 if (openNodes.ContainsKey(nextNode))
                     nextNode = openNodes[nextNode];
 
-                //int h = (x - endx) * (int)(x - endx) + (y - endy) * (int)(y - endy);
-                int h = distance(x - endx, y - endy);
-                int f = currentNode.g + c + h;
+                // Heuristic: 1 step per tile, with a 1% penalty for moving diagonally to prefer straight lines
+                double h = distance(x - endx, y - endy) +  Math.Abs(x - endx) * 0.01 + Math.Abs(y - endy) * 0.01;
+                double f = currentNode.g + c + h;
 
                 if (openNodes.ContainsKey(nextNode) && f >= nextNode.f)
                     continue;
